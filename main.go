@@ -62,7 +62,6 @@ func WriteStore() error {
 		return err
 	}
 
-	os.Remove("store.json")
 	err = os.Rename("store.json.tmp", "store.json")
 	if err != nil {
 		return err
